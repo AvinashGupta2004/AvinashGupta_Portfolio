@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import axios from "axios";
 import SuccessToast from "../Notification/SuccessToast";
@@ -10,6 +11,8 @@ function ContactForm() {
     message: "",
   });
   const [showToast, setShowToast] = useState(false);
+  const [isMailSent, setIsMailSent] = useState(false); // Track mail sending status
+
   function handleChange(event) {
     const { name, value } = event.target;
     setEmailDetails((prevState) => {
@@ -21,20 +24,29 @@ function ContactForm() {
     event.preventDefault();
 
     try {
+      setShowToast(true); // Show toast when sending starts
+      setIsMailSent(false); // Reset mail sent status
+
       const response = await axios.post(
         "https://email-avg.onrender.com/sendmail",
         emailDetails
       );
-      (response.status == 200) ? setShowToast(true) : ""
+
+      if (response.status === 200) {
+        setIsMailSent(true); // Update mail sent status
+      }
     } catch (e) {
       console.error("Error sending Mail", e);
       alert(`Error sending Mail: ${e.message}`);
+      setShowToast(false); // Hide toast on error
     }
   }
 
   return (
     <div className="flex lg:flex-row flex-col justify-start items-stretch lg:gap-12 gap-4 my-12 h-full w-full">
-      {showToast && <SuccessToast />}
+      {showToast && (
+        <SuccessToast isMailSent={isMailSent} onClose={() => setShowToast(false)} />
+      )}
       <div className="lg:w-[50%] h-full flex flex-col lg:gap-8 gap-4">
         <input
           type="text"
