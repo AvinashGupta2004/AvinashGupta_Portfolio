@@ -17,7 +17,7 @@ function ProjectsSection({ id, children }) {
         </div>
 
         {/* Projects Container with Horizontal Scroll on Small Screens */}
-        <div className="flex overflow-x-auto pb-6 gap-5 lg:overflow-x-visible lg:grid lg:grid-cols-3 lg:gap-18">
+        <div className="flex overflow-x-auto pb-6 gap-8 lg:overflow-x-visible lg:grid lg:grid-cols-3 lg:gap-18">
           {children}
         </div>
       </div>

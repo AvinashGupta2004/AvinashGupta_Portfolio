@@ -1,6 +1,6 @@
 function ServiceCard(props) {
   return (
-    <div className="min-w-full border-1 border-white lg:flex bg-white flex-col justify-center items-center gap-2 rounded-md shadow-[0_0_5px_rgba(0,0,0,0.1)] p-4 transition duration-300 linear hover:border-blue-600">
+    <div className="min-w-[20rem] max-w-[25rem] border-1 border-white lg:flex bg-white flex-col justify-center items-center gap-2 rounded-md shadow-[0_0_5px_rgba(0,0,0,0.1)] p-4 transition duration-300 linear hover:border-blue-600">
         <div className="w-full h-[10rem] flex justify-center items-center">
             <img src={props.service.image} className="h-full w-full"></img>
         </div>

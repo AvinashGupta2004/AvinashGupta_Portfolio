@@ -15,7 +15,7 @@
 
 function ProjectCard({ title, description, image }) {
     return (
-      <div className="min-w-full flex-col justify-center items-center gap-2 bg-white p-4 rounded-xl hover:border-blue-600 border-1 border-transparent shadow-md hover:shadow-lg transition-all duration-300 ease-in-out lg:mx-0">
+      <div className="min-w-[20rem] max-w-[25rem] flex-col justify-center items-center gap-2 bg-white p-4 rounded-md hover:border-blue-600 border-1 border-transparent shadow-md hover:shadow-lg transition-all duration-300 ease-in-out lg:mx-0">
         {/* Image Section */}
         <div className="overflow-hidden rounded-lg">
           <img
