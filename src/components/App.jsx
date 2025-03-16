@@ -34,7 +34,7 @@ function App() {
   const [activeTab, setActiveTab] = React.useState("education");
   return (
     <div>
-      <HeroSection>
+      <HeroSection id="hero-section">
         
         <div className="absolute w-full h-full -z-10 inset-0 overflow-hidden">
           <img
@@ -49,8 +49,8 @@ function App() {
         </MainGroup>
         <SkillsMarquee></SkillsMarquee>
       </HeroSection>
-      <AboutSection></AboutSection>
-      <ServiceSection>
+      <AboutSection id="about-section"></AboutSection>
+      <ServiceSection id="services-section">
 
         <Services>
           {services.map((service) => {
@@ -61,7 +61,7 @@ function App() {
         </Services>
       </ServiceSection>
 
-      <PortfolioSection>
+      <PortfolioSection id="portfolio-section">
         <h3 className="text-gray-700 font-nunito text-center font-[700] text-3xl px-8">
           From Learning to Leading
         </h3>
@@ -116,7 +116,7 @@ function App() {
         </TabsBody>
       </PortfolioSection>
 
-      <ProjectsSection>
+      <ProjectsSection id="projects-section">
         {projects.map((project) => {
           return (
             <ProjectCard
@@ -127,7 +127,7 @@ function App() {
           );
         })}
       </ProjectsSection>
-      <ContactSection></ContactSection>
+      <ContactSection id="contact-section"></ContactSection>
 
       <Footer>
         <div className="mx-auto">

@@ -9,7 +9,7 @@ function SuccessToast() {
   if (!isVisible) return null;
   return (
     <div
-      class="fixed top-5 left-[50%] -translate-x-[50%] font-nunito shadow-xl px-5 border-1 border-green-400 p-4 mb-4 text-md text-green-800 rounded-lg bg-green-50 flex gap-4"
+      class="fixed top-5 left-[50%] -translate-x-[50%] font-nunito shadow-xl px-5 border-1 border-green-400 p-4 mb-4 text-md text-green-800 rounded-lg bg-green-50 flex gap-4 nowrap"
       role="alert"
     >
       <span>Mail sent Successfully!</span>

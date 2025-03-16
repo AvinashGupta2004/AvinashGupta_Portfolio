@@ -1,8 +1,8 @@
 import ContactForm from "./ContactForm";
 
-function ContactSection() {
+function ContactSection({id}) {
   return (
-    <div className="h-full bg-white lg:p-14 p-10">
+    <div id = {id} className="h-full bg-white lg:p-14 p-10">
       <h3 className="text-gray-700 font-nunito text-center font-[700] text-3xl">
         Contact Us
       </h3>

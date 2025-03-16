@@ -1,9 +1,9 @@
 const links = [
-  { title: "Home", target: "#", id: "home" },
-  { title: "About", target: "#", id: "about" },
-  { title: "Portfolio", target: "#", id: "portfolio" },
-  { title: "Projects", target: "#", id: "projects" },
-  { title: "Contact", target: "#", id: "contact" },
+  { title: "Home", target: "#home-section", id: "home" },
+  { title: "About", target: "#about-section", id: "about" },
+  { title: "Portfolio", target: "#portfolio-section", id: "portfolio" },
+  { title: "Projects", target: "#projects-section", id: "projects" },
+  { title: "Contact", target: "#contact-section", id: "contact" },
 ];
 
 const skills = [
@@ -59,7 +59,7 @@ const experiences = [
   {
     title: "Python Project Intern",
     company: "CodSoft Pvt. Ltd.",
-    duration: "2019-2021",
+    duration: "Dec 2023-Jan 2024",
     description: [
       "Worked as a Software Developer in TCS for 2 years.",
       "Developed various applications and projects for the company.",
@@ -70,25 +70,14 @@ const experiences = [
   {
     title: "Web Development Intern",
     company: "Prodigy InfoTech Pvt. Ltd.",
-    duration: "2021-Present",
+    duration: "Mar 2024-Apr 2024",
     description: [
       "Worked as a Software Developer in TCS for 2 years.",
       "Developed various applications and projects for the company.",
     ],
     id: "exp-2",
     index: 2,
-  },
-  {
-    title: "Summer Apprenticeship Intern",
-    company: "Indorama India Pvt. Ltd.",
-    duration: "2021-Present",
-    description: [
-      "Worked as a Software Developer in TCS for 2 years.",
-      "Developed various applications and projects for the company.",
-    ],
-    id: "exp-3",
-    index: 3,
-  },
+  }
 ];
 
 const education = [

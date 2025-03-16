@@ -1,14 +1,25 @@
-function ProjectsSection({children}) {
+function ProjectsSection({ id, children }) {
   return (
-    <div className="h-full bg-gray-100 lg:p-10 py-10">
-      <h3 className="text-gray-700 font-nunito text-center font-[700] text-3xl">
-        Our Projects
-      </h3>
-      <p className="text-lg font-[500] text-gray-500 text-center font-nunito mt-1 px-4">
-        Here are the services that we offer to our clients
-      </p>
-      <div className="flex w-full justify-start items-stretch gap-5 mt-5 mx-auto lg:p-6 overflow-x-auto lg:overflow-x-hidden lg:w-[90%] lg:flex-wrap px-4 lg:grid lg:grid-cols-3 lg:gap-18">
-        {children}
+    <div
+      id={id}
+      className="h-full py-12 lg:py-14 px-4 sm:px-6 lg:px-8 relative" 
+      style={{backgroundImage:'url("/images/bg-pattern.png")'}}
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Section Heading */}
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold text-gray-900 font-nunito">
+            Our Projects
+          </h3>
+          <p className="mt-1 text-lg text-gray-600 font-nunito font-medium">
+            Here are the services that we offer to our clients
+          </p>
+        </div>
+
+        {/* Projects Container with Horizontal Scroll on Small Screens */}
+        <div className="flex overflow-x-auto pb-6 gap-5 lg:overflow-x-visible lg:grid lg:grid-cols-3 lg:gap-18">
+          {children}
+        </div>
       </div>
     </div>
   );

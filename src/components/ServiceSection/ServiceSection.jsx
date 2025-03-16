@@ -1,6 +1,6 @@
-function ServiceSection({ children }) {
+function ServiceSection({ id,children }) {
   return (
-    <div className="h-full w-full bg-gray-50 pt-[10%] p-6">
+    <div id = {id} className="h-full w-full bg-gray-50 pt-[10%] p-6">
       <div>
         <h2 className="lg:text-3xl font-[700] font-nunito text-gray-700 text-center tracking-[1px] text-[1.8rem]">
           Awesome Service

@@ -1,7 +1,7 @@
 
-function HeroSection({children}){
+function HeroSection({id,children}){
     return(
-        <div className="lg:h-screen lg:mb-0 lg:py-0 h-full mb-12 py-8">
+        <div id = {id} className="lg:h-screen lg:mb-0 lg:py-0 h-full mb-12 py-8">
             {children}
         </div>
     )

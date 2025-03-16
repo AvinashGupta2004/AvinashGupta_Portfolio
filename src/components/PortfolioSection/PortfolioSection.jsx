@@ -1,7 +1,7 @@
 
-function PortfolioSection({children}){
+function PortfolioSection({id,children}){
   return(
-    <div className="h- w-full lg:pt-12 pt-6">
+    <div id = {id} className="h- w-full lg:pt-12 pt-6">
       {children}
     </div>
   )

@@ -2,13 +2,13 @@ import TimeLineContent from "./TimeLineContent";
 function TimeLineItem(props) {
   return (
     <div className="border-dashed border-l-2 border-gray-300 p-4 pr-0 mb-4 lg:px-8 relative">
-      <div className="h-8 w-8 rounded-full absolute top-0 left-0 -translate-[50%] bg-blue-700 text-md text-white font-rubik flex justify-center items-center">
+      <div className="h-6 w-6 lg:h-8 lg:w-8 rounded-full absolute top-0 left-0 -translate-[50%] bg-blue-700 text-md text-white font-rubik flex justify-center items-center">
         {props.experience.index}
       </div>
       <div className="rounded-lg bg-slate-100 lg:p-4 p-3">
         <div className="flex items-start w-full space-x-4 flex-col">
           <div className="flex flex-row items-center justify-between w-full pr-2">
-            <div className="h-10 w-10 aspect-square rounded-full bg-blue-700 flex items-center justify-center mb-2">
+            <div className="h-8 w-8 lg:h-10 lg:w-10 aspect-square rounded-full bg-blue-700 flex items-center justify-center mb-2">
               <img
                 src="/images/icons8-star-100.png"
                 alt=""
